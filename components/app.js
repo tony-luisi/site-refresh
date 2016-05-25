@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Main from './app/main'
 import Navigation from './app/nav'
+import About from './app/about'
 import {Grid, Row, Col} from 'react-bootstrap'
 
 class App extends Component {
@@ -15,7 +16,10 @@ class App extends Component {
         <Navigation />
         <Grid>
           <Row>
-            {this.props.children}
+            <Main />
+          </Row>
+          <Row>
+            <About />
           </Row>
         </Grid>
 
