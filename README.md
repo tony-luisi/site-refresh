@@ -1,6 +1,7 @@
+
 # site-refresh
 
-its my personal site refresh
+its my personal website
 
 ## how
 
@@ -8,7 +9,9 @@ its my personal site refresh
 
 ```
 git clone https://github.com/tony-luisi/site-refresh
+
 cd
+
 npm install
 ```
 
@@ -44,3 +47,4 @@ npm run deploy
 ### professional qualifications (what professional qualifications do i have)
 ### education (what person qualifications do i have)
 ### interests (personal interests)
+```
