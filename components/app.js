@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import About from './app/about'
 
 class App extends Component {
 
@@ -7,7 +8,12 @@ class App extends Component {
   }
 
   render () {
-    return <h1>{this.props.name} - Web Developer</h1>
+    return (
+      <div className="app">
+        <h1>{this.props.name} - Web Developer</h1>
+        <About />
+      </div>
+    )
   }
 
 }
