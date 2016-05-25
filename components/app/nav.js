@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {Navbar, Nav, NavItem} from 'react-bootstrap'
+import {Link} from 'react-router'
 
 export default class Navigation extends Component{
   render(){
@@ -8,13 +9,13 @@ export default class Navigation extends Component{
         <Navbar>
           <Navbar.Header>
             <Navbar.Brand>
-              <a>Tony Luisi</a>
+              <Link to='/'>Tony Luisi</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
           <Nav pullRight>
-            <NavItem>About Me</NavItem>
-            <NavItem>Contact</NavItem>
+            <NavItem><Link to='about'>About Me</Link></NavItem>
+            <NavItem><Link to='contact'>Contact</Link></NavItem>
             <NavItem>CV</NavItem>
             <NavItem>Projects</NavItem>
             <NavItem>Blog</NavItem>

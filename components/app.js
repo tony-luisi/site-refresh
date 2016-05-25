@@ -15,12 +15,12 @@ class App extends Component {
         <Navigation />
         <Grid>
           <Row>
-            <h1>{this.props.name}</h1>
+            <h1>Tony Luisi</h1>
             <h2>Web Developer</h2>
           </Row>
           <Row>
 
-            <Main />
+            {this.props.children}
           </Row>
         </Grid>
 
