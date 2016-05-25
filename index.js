@@ -1,11 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
 import App from './components/app'
-<<<<<<< HEAD
-
-render(<App name='Tony Luisi' />, document.getElementById('main'))
-console.log('welcome to site-refresh')
-=======
 import Main from './components/app/main'
 import About from './components/app/about'
 import Contact from './components/app/contact'
@@ -26,4 +21,3 @@ render(
     </Route>
   </Router>
   , document.querySelector('main'))
->>>>>>> 40a4f37c484ff7a8aff1f7a9857a4a6d5e9a4f49
