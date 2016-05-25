@@ -9,7 +9,7 @@ export default class About extends Component{
   render(){
     return (
       <div className="about">
-        <h2>About Me</h2>
+        <h3>About Me</h3>
         <Button bsStyle='primary'>Press me</Button>
       </div>
     )

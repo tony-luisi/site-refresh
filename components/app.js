@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import About from './app/about'
+import Main from './app/main'
+import Navigation from './app/nav'
+import {Grid, Row, Col} from 'react-bootstrap'
 
 class App extends Component {
 
@@ -10,8 +12,19 @@ class App extends Component {
   render () {
     return (
       <div className="app">
-        <h1>{this.props.name} - Web Developer</h1>
-        <About />
+        <Navigation />
+        <Grid>
+          <Row>
+            <h1>{this.props.name}</h1>
+            <h2>Web Developer</h2>
+          </Row>
+          <Row>
+
+            <Main />
+          </Row>
+        </Grid>
+
+
       </div>
     )
   }
