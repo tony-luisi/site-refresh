@@ -4,6 +4,9 @@ import App from './components/app'
 import Main from './components/app/main'
 import About from './components/app/about'
 import Contact from './components/app/contact'
+import CV from './components/app/cv'
+import Projects from './components/app/projects'
+import Blog from './components/app/blog'
 import {Router, Route, Link, hashHistory, IndexRoute} from 'react-router'
 
 render(
@@ -12,6 +15,9 @@ render(
       <IndexRoute component={Main}/>
       <Route path='about' component={About} />
       <Route path='contact' component={Contact} />
+      <Route path='cv' component={CV} />
+      <Route path='projects' component={Projects} />
+      <Route path='blog' component={Blog} />
     </Route>
   </Router>
   , document.querySelector('main'))

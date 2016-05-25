@@ -16,9 +16,9 @@ export default class Navigation extends Component{
           <Nav pullRight>
             <NavItem><Link to='about'>About Me</Link></NavItem>
             <NavItem><Link to='contact'>Contact</Link></NavItem>
-            <NavItem>CV</NavItem>
-            <NavItem>Projects</NavItem>
-            <NavItem>Blog</NavItem>
+            <NavItem><Link to='cv'>CV</Link></NavItem>
+            <NavItem><Link to='projects'>Projects</Link></NavItem>
+            <NavItem><Link to='blog'>Blog</Link></NavItem>
           </Nav>
         </Navbar>
       </div>

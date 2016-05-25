@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import TypeWriter from 'react-typewriter'
 
 export default class Main extends Component{
   render(){
@@ -6,8 +7,10 @@ export default class Main extends Component{
       <div>
         <h1>Main</h1>
         <div className='type'>
-          <h3>Hello</h3>
-          <h4>And welcome to my site</h4>
+          <TypeWriter typing={1}>
+            <h1>Hello World!</h1>
+            <h2>And welcome to my site</h2>
+          </TypeWriter>
         </div>
 
 
