@@ -8,19 +8,15 @@ export default class Main extends Component{
   constructor(props){
     super(props)
     this.state = {
-      optionShow: false,
-      animate: ""
-
+      optionShow: false
     }
   }
 
-  componentDidMount(){
-    this.setState({animate: "animated fadeIn"})
+  typingEnded(){
+    this.setState({optionShow:true})
   }
 
-  optionSelect(){
-    this.setState({optionShow: true})
-  }
+
 
   render(){
     const optionContent = this.state.optionShow ? (
@@ -44,9 +40,8 @@ export default class Main extends Component{
       <Grid>
         <Row>
           <Col md={6} sm={12}>
-            {/*<Panel>*/}
               <h1 className="typing-box">
-                <Typist onTypingDone={this.optionSelect.bind(this)} cursor={{show: true, blink: true, hideWhenDone: true}}>
+                <Typist onTypingDone={this.typingEnded.bind(this)} cursor={{show: true, blink: true, hideWhenDone: true}}>
                   Kia Ora
                   <br /><br />
                   I'm Tony Luisi
@@ -60,9 +55,6 @@ export default class Main extends Component{
               </h1>
               <br /><br />
               {optionContent}
-
-            {/*</Panel>*/}
-
           </Col>
           <Col md={6} sm={0}>
             <Image ref="image" src="main_photo.jpg" className="animated fadeIn" responsive/>

@@ -12,7 +12,7 @@ export default class About extends Component{
         <Grid>
           <Row>
             <Col md={6}>
-              <h1>About Tony Luisi</h1>
+              <h1>Tony Weston Luisi</h1>
               <h2>Education History</h2>
               <h3>Graduate of the Enspiral Dev Academy</h3>
               <h4>19 week intensive course in Javascript</h4>

@@ -6,8 +6,8 @@ import {LinkContainer} from 'react-router-bootstrap'
 export default class Navigation extends Component{
   render(){
     return(
-      <div>
-        <Navbar>
+      <div className='navbar'>
+        <Navbar style={{backgroundColor: '#A33643'}}>
           <Navbar.Header>
             <Navbar.Brand>
               <Link to='/'>Tony Luisi</Link>
