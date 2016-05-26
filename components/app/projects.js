@@ -9,6 +9,8 @@ export default class Projects extends Component{
     return(
       <div>
         <h1>Projects</h1>
+        <p>A comprehensive list of projects can be found on my github page: https://github.com/tony-luisi</p>
+        
       </div>
     )
   }

@@ -8,12 +8,12 @@ export default class About extends Component{
 
   render(){
     return (
-      <div className="about">
+      <div className="about animated fadeIn">
         <Grid>
           <Row>
             <Col md={6}>
               <h1>About Tony Luisi</h1>
-              <h2>Educational Qualifications</h2>
+              <h2>Education History</h2>
               <h3>Graduate of the Enspiral Dev Academy</h3>
               <h4>19 week intensive course in Javascript</h4>
               <h3>Conjoint Bachelor of Commerce / Science</h3>
