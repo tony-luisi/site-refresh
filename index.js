@@ -7,6 +7,7 @@ import Contact from './components/app/contact'
 import CV from './components/app/cv'
 import Projects from './components/app/projects'
 import Blog from './components/app/blog'
+import Skills from './components/app/skills'
 import {Router, Route, Link, hashHistory, IndexRoute} from 'react-router'
 
 render(
@@ -18,6 +19,7 @@ render(
       <Route path='cv' component={CV} />
       <Route path='projects' component={Projects} />
       <Route path='blog' component={Blog} />
+      <Route path='skills' component={Skills} />
     </Route>
   </Router>
   , document.querySelector('main'))

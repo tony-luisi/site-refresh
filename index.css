@@ -1,18 +1,11 @@
-
-
-.type
-{
-    width: 30em;
-    white-space:nowrap;
-    overflow:hidden;
-    -webkit-animation: type 5s steps(50, end);
-    animation: type 5s steps(50, end);
+* {
+  font-family: 'Bree Serif', serif;
 }
 
-@keyframes type{
-    from { width: 0; }
+.typing-box {
+  text-align: center;
 }
 
-@-webkit-keyframes type{
-    from { width: 0; }
+.main-content {
+  text-align: center;
 }

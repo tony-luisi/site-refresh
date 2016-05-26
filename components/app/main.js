@@ -1,18 +1,75 @@
 import React, {Component} from 'react'
 import Typist from 'react-typist'
+import {Grid, Row, Col, Button, Image, Panel} from 'react-bootstrap'
+import {LinkContainer} from 'react-router-bootstrap'
+
 
 export default class Main extends Component{
+  constructor(props){
+    super(props)
+    this.state = {
+      optionShow: false,
+      animate: ""
+
+    }
+  }
+
+  componentDidMount(){
+    this.setState({animate: "animated fadeIn"})
+  }
+
+  optionSelect(){
+    this.setState({optionShow: true})
+  }
+
   render(){
-    return (
-      <div>
-        <div className='type'>
-          <Typist typing={1}>
-            <h1>Hello... and welcome</h1>
-          </Typist>
-        </div>
-
-
+    const optionContent = this.state.optionShow ? (
+      <div className="main-content">
+        <LinkContainer to="about">
+          <Button bsStyle="primary" className="animated fadeIn">About Me</Button>
+        </LinkContainer>
+        <LinkContainer to="contact">
+          <Button bsStyle="primary" className="animated fadeIn">Contact</Button>
+        </LinkContainer>
+        {/*<LinkContainer to="CV">
+          <Button bsStyle="primary" className="animated fadeIn">CV</Button>
+        </LinkContainer>*/}
+        <a href='TonyLuisiCV.pdf'>CV</a>
+        <LinkContainer to="projects">
+          <Button bsStyle="primary" className="animated fadeIn">Projects</Button>
+        </LinkContainer>
       </div>
+    ) : <div></div>
+
+    return (
+      <Grid>
+        <Row>
+          <Col md={6} sm={12}>
+            {/*<Panel>*/}
+              <h1 className="typing-box">
+                <Typist onTypingDone={this.optionSelect.bind(this)} cursor={{show: true, blink: true, hideWhenDone: true}}>
+                  Kia Ora
+                  <br /><br />
+                  I'm Tony Luisi
+                  <br /><br />
+                  Full Stack Developer
+                  <br /><br />
+                  Chartered Accountant
+                  <br /><br />
+                  Information Systems Auditor
+                </Typist>
+              </h1>
+              <br /><br />
+              {optionContent}
+
+            {/*</Panel>*/}
+
+          </Col>
+          <Col md={6} sm={0}>
+            <Image ref="image" src="main_photo.jpg" className="animated fadeIn" responsive/>
+          </Col>
+        </Row>
+      </Grid>
     )
   }
 }

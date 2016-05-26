@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {Navbar, Nav, NavItem} from 'react-bootstrap'
 import {Link} from 'react-router'
+import {LinkContainer} from 'react-router-bootstrap'
 
 export default class Navigation extends Component{
   render(){
@@ -14,11 +15,12 @@ export default class Navigation extends Component{
             <Navbar.Toggle />
           </Navbar.Header>
           <Nav pullRight>
-            <NavItem><Link to='about'>About Me</Link></NavItem>
-            <NavItem><Link to='contact'>Contact</Link></NavItem>
-            <NavItem><Link to='cv'>CV</Link></NavItem>
-            <NavItem><Link to='projects'>Projects</Link></NavItem>
-            <NavItem><Link to='blog'>Blog</Link></NavItem>
+              <LinkContainer to='about'><NavItem>About Me</NavItem></LinkContainer>
+              <LinkContainer to='contact'><NavItem>Contact</NavItem></LinkContainer>
+              <LinkContainer to='CV'><NavItem>CV</NavItem></LinkContainer>
+              <LinkContainer to='projects'><NavItem>Projects</NavItem></LinkContainer>
+              {/*<LinkContainer to='blog'><NavItem>Blog</NavItem></LinkContainer>*/}
+              <LinkContainer to='skills'><NavItem>Skills</NavItem></LinkContainer>
           </Nav>
         </Navbar>
       </div>
