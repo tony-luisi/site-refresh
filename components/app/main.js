@@ -31,10 +31,9 @@ export default class Main extends Component{
         <LinkContainer to="contact">
           <Button bsStyle="primary" className="animated fadeIn">Contact</Button>
         </LinkContainer>
-        {/*<LinkContainer to="CV">
+        <LinkContainer to="CV">
           <Button bsStyle="primary" className="animated fadeIn">CV</Button>
-        </LinkContainer>*/}
-        <a href='TonyLuisiCV.pdf'>CV</a>
+        </LinkContainer>
         <LinkContainer to="projects">
           <Button bsStyle="primary" className="animated fadeIn">Projects</Button>
         </LinkContainer>
