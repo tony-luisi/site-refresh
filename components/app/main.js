@@ -24,14 +24,21 @@ export default class Main extends Component{
         <LinkContainer to="about">
           <Button bsStyle="primary" className="animated fadeIn">About Me</Button>
         </LinkContainer>
+        {' '}
         <LinkContainer to="contact">
           <Button bsStyle="primary" className="animated fadeIn">Contact</Button>
         </LinkContainer>
+        {' '}
         <LinkContainer to="CV">
           <Button bsStyle="primary" className="animated fadeIn">CV</Button>
         </LinkContainer>
+        {' '}
         <LinkContainer to="projects">
           <Button bsStyle="primary" className="animated fadeIn">Projects</Button>
+        </LinkContainer>
+        {' '}
+        <LinkContainer to="skills">
+          <Button bsStyle="primary" className="animated fadeIn">Skills</Button>
         </LinkContainer>
       </div>
     ) : <div></div>
