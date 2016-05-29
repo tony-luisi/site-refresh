@@ -64,7 +64,7 @@ export default class Main extends Component{
               {optionContent}
           </Col>
           <Col md={6} sm={0}>
-            <Image ref="image" src="main_photo.jpg" className="animated fadeIn" responsive/>
+            <Image ref="image" src="images/main_photo.jpg" className="animated fadeIn" responsive/>
           </Col>
         </Row>
       </Grid>

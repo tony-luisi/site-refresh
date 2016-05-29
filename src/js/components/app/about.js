@@ -46,7 +46,7 @@ export default class About extends Component{
               </Accordion>
             </Col>
             <Col md={6}>
-            <Image src="about_photo.jpg" className="animated fadeIn" thumbnail responsive/>
+            <Image src="images/about_photo.jpg" className="animated fadeIn" thumbnail responsive/>
 
             </Col>
           </Row>
