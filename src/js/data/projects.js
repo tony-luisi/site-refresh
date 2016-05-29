@@ -1,4 +1,4 @@
-export default const projects = [
+export const projects = [
   {
     title: "on fleek",
     projectType: "group",
@@ -9,7 +9,7 @@ export default const projects = [
     imageLink: ""
   },
   {
-    title: "on fleek",
+    title: "pokemon trading card game",
     projectType: "group",
     description: "an app that allows users to feel better about themselves",
     technologies: ["react", "redux", "express"],
@@ -18,7 +18,16 @@ export default const projects = [
     imageLink: ""
   },
   {
-    title: "on fleek",
+    title: "ki mai",
+    projectType: "personal",
+    description: "an app that allows users to feel better about themselves",
+    technologies: ["react", "redux", "express"],
+    github: "",
+    deployment: "",
+    imageLink: ""
+  },
+  {
+    title: "who hi",
     projectType: "group",
     description: "an app that allows users to feel better about themselves",
     technologies: ["react", "redux", "express"],
@@ -27,7 +36,7 @@ export default const projects = [
     imageLink: ""
   },
   {
-    title: "on fleek",
+    title: "conways game of life",
     projectType: "group",
     description: "an app that allows users to feel better about themselves",
     technologies: ["react", "redux", "express"],
@@ -36,16 +45,7 @@ export default const projects = [
     imageLink: ""
   },
   {
-    title: "on fleek",
-    projectType: "group",
-    description: "an app that allows users to feel better about themselves",
-    technologies: ["react", "redux", "express"],
-    github: "",
-    deployment: "",
-    imageLink: ""
-  },
-  {
-    title: "on fleek",
+    title: "timeberlake",
     projectType: "group",
     description: "an app that allows users to feel better about themselves",
     technologies: ["react", "redux", "express"],
