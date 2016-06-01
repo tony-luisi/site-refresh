@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Project from './projects/project'
 import {Grid, Row, Col} from 'react-bootstrap'
+import {projects} from '../../data/projects'
 
 export default class Projects extends Component{
   constructor(props){
@@ -9,7 +10,7 @@ export default class Projects extends Component{
 
   render(){
     return(
-      <Grid>
+      <Grid className="animated fadeIn">
         <Row>
           <Col>
             <h1>Projects</h1>
@@ -17,13 +18,9 @@ export default class Projects extends Component{
           </Col>
         </Row>
         <Row>
-          <Project name="on fleek"/>
-          <Project name="ki mai"/>
-          <Project name="conways"/>
-        </Row>
-        <br />
-        <Row>
-          <Project name="pokemon card game"/>
+          {projects.map(function(project, i){
+            return <Project name={project.title} key={i} {...project} />
+          })}
         </Row>
       </Grid>
     )

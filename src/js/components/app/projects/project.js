@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Row, Col, Grid, Image} from 'react-bootstrap'
+import {Row, Col, Grid, Image, Thumbnail} from 'react-bootstrap'
 
 export default class Project extends Component{
   constructor(props){
@@ -8,11 +8,18 @@ export default class Project extends Component{
   render(){
     return(
       <div>
-        <Col md={2}>
-          <Image src='http://placehold.it/150x300'></Image>
-        </Col>
-        <Col md={2}>
-          <h1>{this.props.name}</h1>
+        <Col md={6}>
+          <Thumbnail src='http://placehold.it/450x150'>
+            <Row>
+              <Col md={6}>
+                <p>{this.props.name}</p>
+              </Col>
+              <Col md={6}>
+                <p>{this.props.name}</p>
+              </Col>
+            </Row>
+
+          </Thumbnail>
         </Col>
       </div>
     )
