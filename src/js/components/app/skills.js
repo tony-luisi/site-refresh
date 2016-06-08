@@ -34,8 +34,6 @@ export default class Skills extends Component{
           </Col>
         </Row>
       </Grid>
-
-
     )
   }
 }

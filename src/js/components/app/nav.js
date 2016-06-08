@@ -19,7 +19,6 @@ export default class Navigation extends Component{
               <LinkContainer to='contact'><NavItem>Contact</NavItem></LinkContainer>
               <LinkContainer to='CV'><NavItem>CV</NavItem></LinkContainer>
               <LinkContainer to='projects'><NavItem>Projects</NavItem></LinkContainer>
-              {/*<LinkContainer to='blog'><NavItem>Blog</NavItem></LinkContainer>*/}
               <LinkContainer to='skills'><NavItem>Skills</NavItem></LinkContainer>
           </Nav>
         </Navbar>

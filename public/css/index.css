@@ -19,7 +19,13 @@
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #A33643;
-    border-color: #A33643;
+  color: #fff;
+  background-color: #A33643;
+  border-color: #A33643;
+}
+
+.project {
+  border-style: solid;
+  border-color: #A33643;
+
 }

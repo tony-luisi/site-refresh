@@ -17,10 +17,10 @@ export default class Projects extends Component{
             <p>A comprehensive list of projects can be found on my github page <a href='https://github.com/tony-luisi' target='_blank'>here</a></p>
           </Col>
         </Row>
-        <Row>
-          {projects.map(function(project, i){
-            return <Project name={project.title} key={i} {...project} />
-          })}
+        <Row className='project'>
+            {projects.map(function(project, i){
+              return <Project name={project.title} key={i} {...project} />
+            })}
         </Row>
       </Grid>
     )
