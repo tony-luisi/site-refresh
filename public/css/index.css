@@ -25,7 +25,19 @@
 }
 
 .project {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
   border-style: solid;
   border-color: #A33643;
+}
 
+.singleProject {
+  width: 50%;
+  display: flex;
+  align-content: center;
+}
+
+.projectImage {
+  width: 100%;
 }

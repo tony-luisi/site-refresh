@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Row, Col, Grid, Image, Thumbnail} from 'react-bootstrap'
+import {Row, Col, Grid, Image, Thumbnail, Panel} from 'react-bootstrap'
 
 export default class Project extends Component{
   constructor(props){
@@ -8,10 +8,10 @@ export default class Project extends Component{
 
   render(){
     return(
-      <div>
-        <Col md={6}>
+      <Panel className='singleProject'>
+        <Row>
           <Col md={6}>
-            <Image src={this.props.imageLink} responsive></Image>
+            <Image src={this.props.imageLink} className='projectImage' repsonsive></Image>
           </Col>
           <Col md={6}>
             <h3>{this.props.name}</h3>
@@ -28,12 +28,12 @@ export default class Project extends Component{
               )
             })}</ul>
             <h4>Github:</h4>
-            <p>{this.props.github}</p>
+            <a href={this.props.github}>{this.props.github}</a>
             <h4>Deployment:</h4>
-            <p>{this.props.deployment}</p>
+            <a href={this.props.deployment}>{this.props.deployment}</a>
           </Col>
-        </Col>
-      </div>
+        </Row>
+      </Panel>
     )
   }
 
