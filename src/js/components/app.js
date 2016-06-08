@@ -18,8 +18,6 @@ class App extends Component {
             {this.props.children}
           </Row>
         </Grid>
-
-
       </div>
     )
   }
