@@ -16,55 +16,40 @@ export default class Main extends Component{
     this.setState({optionShow:true})
   }
 
-
+  generatePanel(route, text) {
+    return (
+      <LinkContainer to={route}>
+        <Col sm={6} fluid>
+          <div bsStyle="primary" className="animated fadeIn mainPage">{text}</div>
+        </Col>
+      </LinkContainer>
+    )
+  }
 
   render(){
     const optionContent = this.state.optionShow ? (
       <div className="main-content">
-        <LinkContainer to="about">
-          <Button bsStyle="primary" className="animated fadeIn">About Me</Button>
-        </LinkContainer>
-        {' '}
-        <LinkContainer to="contact">
-          <Button bsStyle="primary" className="animated fadeIn">Contact</Button>
-        </LinkContainer>
-        {' '}
-        <LinkContainer to="CV">
-          <Button bsStyle="primary" className="animated fadeIn">CV</Button>
-        </LinkContainer>
-        {' '}
-        <LinkContainer to="projects">
-          <Button bsStyle="primary" className="animated fadeIn">Projects</Button>
-        </LinkContainer>
-        {' '}
-        <LinkContainer to="skills">
-          <Button bsStyle="primary" className="animated fadeIn">Skills</Button>
-        </LinkContainer>
+        {this.generatePanel('about', 'About me')}
+        {this.generatePanel('contact', 'Contact')}
+        {this.generatePanel('CV', 'CV')}
+        {this.generatePanel('projects', 'Projects')}
+        {this.generatePanel('skills', 'Skills')}
       </div>
     ) : <div></div>
 
     return (
       <Grid>
         <Row>
-          <Col md={6} sm={12}>
-              <h1 className="typing-box">
-                <Typist onTypingDone={this.typingEnded.bind(this)} cursor={{show: true, blink: true, hideWhenDone: true}}>
-                  Kia Ora
+          <Col md={12} sm={12}>
+              <h3 className="typing-box">
+                <Typist onTypingDone={this.typingEnded.bind(this)} cursor={{show: true, blink: true, hideWhenDone: false}}>
+                  Kia Ora, I'm Tony
                   <br /><br />
-                  I'm Tony Luisi
-                  <br /><br />
-                  Full Stack Developer
-                  <br /><br />
-                  Chartered Accountant
-                  <br /><br />
-                  Information Systems Auditor
+                  Full Stack Developer, Chartered Accountant, Information Systems Auditor
                 </Typist>
-              </h1>
+              </h3>
               <br /><br />
               {optionContent}
-          </Col>
-          <Col md={6} sm={0}>
-            <Image ref="image" src="images/main_photo.jpg" className="animated fadeIn" responsive/>
           </Col>
         </Row>
       </Grid>

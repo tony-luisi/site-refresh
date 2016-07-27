@@ -1,5 +1,6 @@
 * {
   font-family: 'Bree Serif', serif;
+  color: white;
 }
 
 .typing-box {
@@ -20,8 +21,8 @@
 
 .btn-primary {
   color: #fff;
-  background-color: #A33643;
-  border-color: #A33643;
+  background-color: #550000;
+  border-color: #550000;
 }
 
 .project {
@@ -29,7 +30,7 @@
   flex-wrap: wrap;
   align-content: center;
   border-style: solid;
-  border-color: #A33643;
+  border-color: #550000;
 }
 
 .singleProject {
@@ -40,4 +41,21 @@
 
 .projectImage {
   width: 100%;
+}
+
+.mainPage {
+  height: 5em;
+  margin: 0.5em;
+  background-color: #233237;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: #18121E;
+}
+
+.navbar {
+  background-color: #233237;
 }

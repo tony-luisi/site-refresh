@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "budo ./src/js/index.js -d ./public --serve bundle.js --live",
-    "build": "browserify . -o bundle.js -g uglifyify",
+    "build": "browserify ./src/js/index.js -o ./public/bundle.js -g uglifyify",
     "test": "browserify test.js | node | tap-spec",
-    "dist": "mkdir -p dist && bash -c 'cp *.{js,html,css,jpg} dist'",
+    "dist": "mkdir -p dist && bash -c 'cp *.{js,html,css,jpg,png} dist'",
     "push": "gh-pages -d dist -r git@github.com:tony-luisi/site-refresh.git",
     "deploy": "npm run build && npm run dist && npm run push"
   },
