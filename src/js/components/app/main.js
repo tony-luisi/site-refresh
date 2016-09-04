@@ -49,7 +49,7 @@ export default class Main extends Component{
           <Col md={6} sm={12}>
               <h1 className="typing-box">
                 <Typist onTypingDone={this.typingEnded.bind(this)} cursor={{show: true, blink: true, hideWhenDone: true}}>
-                  Kia Ora
+                  Kia Ora!
                   <br /><br />
                   I'm Tony Luisi
                   <br /><br />
