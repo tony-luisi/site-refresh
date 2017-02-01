@@ -10,16 +10,11 @@ import Blog from './components/app/blog'
 import Skills from './components/app/skills'
 import {Router, Route, Link, hashHistory, IndexRoute} from 'react-router'
 
-render(
+render (
   <Router history={hashHistory}>
     <Route path='/' component={App}>
       <IndexRoute component={Main}/>
-      <Route path='about' component={About} />
-      <Route path='contact' component={Contact} />
-      <Route path='cv' component={CV} />
-      <Route path='projects' component={Projects} />
-      <Route path='blog' component={Blog} />
-      <Route path='skills' component={Skills} />
     </Route>
   </Router>
-  , document.querySelector('main'))
+  , document.querySelector('main')
+)

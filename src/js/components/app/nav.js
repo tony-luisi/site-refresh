@@ -15,11 +15,11 @@ export default class Navigation extends Component{
             <Navbar.Toggle />
           </Navbar.Header>
           <Nav pullRight>
-              <LinkContainer to='about'><NavItem>About Me</NavItem></LinkContainer>
-              <LinkContainer to='contact'><NavItem>Contact</NavItem></LinkContainer>
-              <LinkContainer to='CV'><NavItem>CV</NavItem></LinkContainer>
-              <LinkContainer to='projects'><NavItem>Projects</NavItem></LinkContainer>
-              <LinkContainer to='skills'><NavItem>Skills</NavItem></LinkContainer>
+            {/* <LinkContainer to='about'><NavItem>About Me</NavItem></LinkContainer> */}
+            {/* <LinkContainer to='contact'><NavItem>Contact</NavItem></LinkContainer> */}
+            {/* <LinkContainer to='CV'><NavItem>CV</NavItem></LinkContainer> */}
+            {/* <LinkContainer to='projects'><NavItem>Projects</NavItem></LinkContainer> */}
+            {/* <LinkContainer to='skills'><NavItem>Skills</NavItem></LinkContainer> */}
           </Nav>
         </Navbar>
       </div>

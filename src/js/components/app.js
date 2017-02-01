@@ -1,27 +1,23 @@
 import React, { Component } from 'react'
-import Main from './app/main'
 import Navigation from './app/nav'
 import {Grid, Row, Col} from 'react-bootstrap'
 
+import Projects from './app/projects'
+import CV from './app/cv'
+import Main from './app/main'
+
 class App extends Component {
-
-  constructor (props) {
-    super(props)
-  }
-
   render () {
     return (
-      <div className="app">
-        <Navigation />
-        <Grid>
-          <Row>
-            {this.props.children}
-          </Row>
-        </Grid>
-      </div>
+      <Grid fluid>
+        <Row>
+          <Main />
+          <CV />
+          <Projects />
+        </Row>
+      </Grid>
     )
   }
-
 }
 
 export default App

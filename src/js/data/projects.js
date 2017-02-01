@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: 'Wok Express',
+    projectType: 'Contractor / Freelance',
+    description: 'A customised e-commerce platform.',
+    technologies: ['react', 'redux', 'wordpress-graphql (backend)', 'woocommerce (backend)'],
+    github: 'Private (ask me to talk you through the code)',
+    deployment: 'https://www.wokexpress.co.nz/order-form',
+    imageLink: '/images/wokexpress.png'
+  },
+  {
     title: 'on fleek',
     projectType: 'Group',
     description: 'A style app to help users look their best in a safe and fun way. This was my final group project which utilised a whole range of server and client side technologies. Key features include the ability to upload photos of your most fashionable outfits and allow users to positively rate how awesome (or on fleek) your outfit is. [BEST VIEWED ON A MOBILE]',
@@ -23,16 +32,16 @@ export const projects = [
     description: 'A one day app created as a group project to introduce our web dev class using an exciting panel reveal game. Our group name was hihi which is a Native NZ bird, so this game is called who-hi.',
     technologies: ['knex', 'jade', 'express', 'sass'],
     github: 'https://github.com/tony-luisi/who-hi',
-    deployment: 'http://who-hi.herokuapp.com/',
+    deployment: 'http://who-hi-eda.herokuapp.com/',
     imageLink: '/images/whohi.png'
   },
   {
-    title: 'conways game of life',
+    title: 'tony-luisi.github.io',
     projectType: 'Personal',
-    description: 'A website using vanilla js demonstrating John Conway\'s game of life',
-    technologies: ['vanilla js', 'browserify'],
-    github: 'https://github.com/tony-luisi/conways',
-    deployment: 'http://tony-luisi.github.io/conways/',
-    imageLink: '/images/conways.png'
-  }
+    description: 'My personal website (always a work in progress...)',
+    technologies: ['react'],
+    github: 'https://github.com/tony-luisi/site-refresh',
+    deployment: 'http://tony-luisi.github.io/',
+    imageLink: '/images/personal-site.png'
+  },
 ]
